@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Love Attention</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div id="app">
+
+    <!-- Home screen -->
+    <div id="screen-home">
+      <div id="envelope">💌</div>
+      <h1>Love Attention</h1>
+      <p class="subtitle">Focus, and receive a letter.</p>
+
+      <div class="timer-row">
+        <input id="minutes-input" type="number" min="1" max="480" value="60" />
+        <span class="timer-label">minutes</span>
+      </div>
+
+      <button id="btn-start">Start Focus</button>
+    </div>
+
+    <!-- Active session screen -->
+    <div id="screen-session" class="hidden">
+      <div id="session-envelope">💌</div>
+      <div id="timer-display">--:--</div>
+      <p class="muted">Your letter is waiting…</p>
+      <button id="btn-cancel">Give Up</button>
+    </div>
+
+    <!-- Quote reveal screen -->
+    <div id="screen-quote" class="hidden">
+      <div id="reveal-envelope">💌</div>
+      <p id="quote-text"></p>
+      <button id="btn-done">Done</button>
+    </div>
+
+    <!-- Notebook panel -->
+    <div id="notebook" class="hidden">
+      <h2>Letters</h2>
+      <div id="notebook-list"></div>
+      <p id="notebook-empty" class="muted">No letters yet. Complete a focus session.</p>
+    </div>
+
+    <!-- Notebook toggle button -->
+    <button id="btn-notebook" title="Open your letters">📖</button>
+
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
