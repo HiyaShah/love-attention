@@ -5,7 +5,7 @@
 > "don't you think maybe they are the same thing? love and attention?"
 > — Lady Bird
 
-inspired by the [forest app](https://www.forestapp.cc/)
+inspired by convos with my friends & the [forest app](https://www.forestapp.cc/)
 
 ---
 
