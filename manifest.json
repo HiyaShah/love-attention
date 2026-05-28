@@ -2,8 +2,8 @@
   "manifest_version": 3,
   "name": "Love Attention",
   "version": "1.0.0",
-  "description": "Focus timer that rewards you with city emojis",
-  "permissions": ["storage", "alarms", "notifications"],
+  "description": "Focus timer that rewards completed sessions with a warm quote",
+  "permissions": ["storage", "alarms", "notifications", "webNavigation", "tabs"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {

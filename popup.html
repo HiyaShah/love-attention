@@ -38,14 +38,38 @@
     </div>
 
     <!-- Notebook panel -->
-    <div id="notebook" class="hidden">
+    <div id="notebook" class="hidden panel">
       <h2>Letters</h2>
       <div id="notebook-list"></div>
       <p id="notebook-empty" class="muted">No letters yet. Complete a focus session.</p>
     </div>
 
-    <!-- Notebook toggle button -->
-    <button id="btn-notebook" title="Open your letters">📖</button>
+    <!-- Settings panel -->
+    <div id="settings" class="hidden panel">
+      <h2>Blocked Sites</h2>
+      <p class="panel-hint">Blocked during any active focus session.</p>
+
+      <div class="url-input-row">
+        <input id="block-input" type="text" placeholder="e.g. instagram.com" autocomplete="off" spellcheck="false" />
+        <button id="btn-add-block">Add</button>
+      </div>
+      <ul id="block-list" class="url-list"></ul>
+
+      <h2 class="section-gap">Allowed Sites</h2>
+      <p class="panel-hint">Always allowed, even if the domain is on the blocklist.</p>
+
+      <div class="url-input-row">
+        <input id="allow-input" type="text" placeholder="e.g. docs.google.com" autocomplete="off" spellcheck="false" />
+        <button id="btn-add-allow">Add</button>
+      </div>
+      <ul id="allow-list" class="url-list"></ul>
+    </div>
+
+    <!-- Bottom buttons -->
+    <div id="bottom-bar">
+      <button id="btn-settings" title="Site settings">⚙️</button>
+      <button id="btn-notebook" title="Open your letters">📖</button>
+    </div>
 
   </div>
   <script src="popup.js"></script>
